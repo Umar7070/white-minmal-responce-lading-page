@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="/css/fortfolio.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -17,7 +17,6 @@
 </head>
 
 <body>
-
     <nav class="header__navbar">
         <div class="logo">
             <p>white</p>
@@ -30,17 +29,17 @@
                 <a href="about.html" class="header__navlink">About</a>
             </li>
             <li class="header__navitem">
-                <a href="portfolio.html" class="header__navlink">Portfolio</a>
+                <a href="#Portfolio" class="header__navlink">Portfolio</a>
             </li>
 
             <li class="header__navitem">
                 <a href="servics.html" class="header__navlink">Serveces</a>
             </li>
-           
+
             <li class="header__navitem">
                 <a href="#Blog" class="header__navlink">Blog</a>
             </li>
-           
+
             <li class="header__navitem">
                 <a href="#Connect" class="header__navlink">Contect</a>
             </li>
@@ -51,14 +50,13 @@
             <span class="header__bar"></span>
         </div>
     </nav>
-    <div class="back_img">
-        <div class="card">
-            <div class="card_border">
-                <div class="card_title">WHITE</div>
-                <div class="card_sub">
-                    <p>DESIGN | DEVELOPMENT | BRANDING</p>
-                </div>
-            </div>
+    <!-- .grid container  -->
+    <div class="grid_container">
+        <div class="title">PORTFOLIO GRID</div>
+        <div class="breadcrumb">
+            <a href="#">Home</a> /
+            <a href="#">Portfolio</a> /
+            <span>Grid</span>
         </div>
     </div>
 
@@ -150,66 +148,32 @@
             </button>
         </div>
     </section>
-    <!-- /// blog section/ -->
-    <section class="blog-section">
-        <h2>OUR BLOG</h2>
-        <p class="blog-description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sequi tempora veritatis nemo aut ea iusto eos est
-            expedita, quas ab adipisci.
-        </p>
+    <script src="/js/portfolio.js"></script>
+    <!-- footer  -->
+    <footer class="footer">
+        <h4 class="footer-title">WHITE</h4>
 
-        <div class="blog-container">
-            <div class="blog-card">
-                <img src="/img/1.jpg" alt="Dog Image">
-                <p class="author">By <span>Mark Stone</span>, 23 November, 2025</p>
-                <h3>THE ULTIMATE RENTERS GUIDE</h3>
-                <p class="blog-text">
-                    Grass there without lights be years male have and grass firmament kind bring, is thing doesn't herb.
-                </p>
-                <a href="#">Read more →</a>
-            </div>
-
-            <div class="blog-card">
-                <img src="/img/sddefault.webp" alt="">
-                <p class="author">By <span>Mark Stone</span>, 23 November, 2025</p>
-                <h3>LIVING BIG IN TINY HOUSES</h3>
-                <p class="blog-text">
-                    Grass there without lights be years male have and grass firmament kind bring, is thing doesn't herb.
-                </p>
-                <a href="#">Read more →</a>
-            </div>
-
-            <div class="blog-card">
-                <img src="/img/pick.jpg" alt="Dog Image">
-
-                <p class="author">By <span>Mark Stone</span>, 23 November, 2025</p>
-                <h3>THE ULTIMATE RENTERS GUIDE</h3>
-                <p class="blog-text">
-                    Grass there without lights be years male have and grass firmament kind bring, is thing doesn't herb.
-                </p>
-                <a href="#">Read more →</a>
-            </div>
+        <div class="social-icons">
+            <div class="icon"><i class="fab fa-facebook-f"></i></div>
+            <div class="icon"><i class="fab fa-google"></i></div>
+            <div class="icon"><i class="fab fa-instagram"></i></div>
+            <div class="icon"><i class="fab fa-pinterest-p"></i></div>
         </div>
 
-        <button class="scroll-top" onclick="scrollToTop()">⬆</button>
-    </section>
+        <nav class="footer-nav">
+            <ul>
+                <li>Home</li>
+                <li>Portfolio</li>
+                <li>About</li>
+                <li>Blog</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
 
-    <!-- footer section   -->
-    <footer class="py-10">
-        <h2>WHITE</h2>
-        <p class="mt-4 text-gray-500 text-xs">
-            All copyright © reserved by <span class="text-blue-600">ThemePure</span> 2025
-        </p>
-        <div class="list">
-            <i class="fa-brands fa-facebook-f"></i>
-        </div>
+        <p class="copyright">All copyright &copy; reserved by <span class="highlight">ThemePure</span> 2025</p>
+
+        <button id="scrollToTop" class="scroll-top">&#9650;</button>
     </footer>
-
-
-
-
-
-    <script src="/js/index.js"></script>
 
 </body>
 

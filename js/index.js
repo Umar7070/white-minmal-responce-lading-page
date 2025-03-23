@@ -13,6 +13,22 @@ document.querySelectorAll(".header__navlink").forEach((n)=>n.addEventListener("c
   navmenu.classList.remove("active");
 }))
 
+
+// navbar color changes
+
+$(document).ready(function(){
+  $(window).scroll(function(){
+  	var scroll = $(window).scrollTop();
+	  if (scroll > 300) {
+	    $(".header__navbar").css("background" , "blue");
+	  }
+
+	  else{
+		  $(".header__navbar").css("background" , "#333");  	
+	  }
+  })
+})
+
 // navigate 
 // function loadPage(page) {
 //   fetch(`pages/${page}.html`)

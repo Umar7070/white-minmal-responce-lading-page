@@ -23,45 +23,34 @@ window.addEventListener("scroll", function() {
   }
 });
 
-// navbar color changes 
+// /filter 
 
-$(document).ready(function () {
-  $(window).scroll(function () {
-    if ($(this).scrollTop() > 300) {
-      $(".header__navlink").addClass("scrolled");
-    } else {
-      $(".header__navlink").removeClass("scrolled");
-    }
+document.addEventListener("DOMContentLoaded", function () {
+  let filterMenu = document.querySelectorAll(".listitemBox");
+  let items = document.querySelectorAll(".itemBox");
+
+  filterMenu.forEach(menu => {
+      menu.addEventListener("click", function () {
+          // Remove active class from all menu items
+          filterMenu.forEach(item => item.classList.remove("active"));
+          this.classList.add("active");
+
+          let filterValue = this.getAttribute("data-filter");
+
+          items.forEach(item => {
+              if (filterValue === "all" || item.getAttribute("data-item") === filterValue) {
+                  item.style.display = "block";
+              } else {
+                  item.style.display = "none";
+              }
+          });
+      });
   });
 });
 
-
-
-// images slider 
-
-// let index = 0;
-// const slides = document.querySelectorAll(".slide");
-// const totalSlides = slides.length;
-// const slider = document.getElementById("slider");
-
-// function updateSlider() {
-//     slider.style.transform = `translateX(-${index * (150 + 20)}px)`;
-// }
-
-// function nextSlide() {
-//     index = (index + 1) % totalSlides;
-//     updateSlider();
-// }
-
-// function prevSlide() {
-//     index = (index - 1 + totalSlides) % totalSlides;
-//     updateSlider();
-// }
-
-// setInterval(nextSlide, 1000);
-
-
-// bottum slider 
+// top upper 
 document.getElementById('scrollToTop').addEventListener('click', function () {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
+
+
