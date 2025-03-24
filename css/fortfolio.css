@@ -51,6 +51,9 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 3.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 
 .header__navmenu {
@@ -68,6 +71,7 @@
   padding: 5px;
   height: 45px;
   width: 45px;
+  background-color: gray;
 }
 
 .header__bar {
@@ -92,6 +96,7 @@
     width: 100%;
     text-align: center;
     transition: 0.5s;
+    height: 100vh;
   }
 
   .header__hamburger {
@@ -273,6 +278,7 @@
   border: 1px solid transparent;
 
 }
+
 .footer_btn button:hover {
   background-color: white;
   color: black;
@@ -351,7 +357,7 @@
   font-size: 16px;
   cursor: pointer;
   transition: 0.3s;
-  
+
 }
 
 .icon:hover {
@@ -369,7 +375,7 @@
   font-weight: bold;
   text-transform: uppercase;
   color: #555;
-  
+
 }
 
 .footer-nav ul li {

@@ -16,6 +16,7 @@ document.querySelectorAll(".header__navlink").forEach((n) => n.addEventListener(
 // navbar color changes 
 
 
+
 $(document).ready(function () {
   $(window).scroll(function () {
     if ($(this).scrollTop() > 100) {
@@ -31,34 +32,7 @@ $(document).ready(function () {
 });
 
 
-
-
-
-// images slider 
-
-// let index = 0;
-// const slides = document.querySelectorAll(".slide");
-// const totalSlides = slides.length;
-// const slider = document.getElementById("slider");
-
-// function updateSlider() {
-//     slider.style.transform = `translateX(-${index * (150 + 20)}px)`;
-// }
-
-// function nextSlide() {
-//     index = (index + 1) % totalSlides;
-//     updateSlider();
-// }
-
-// function prevSlide() {
-//     index = (index - 1 + totalSlides) % totalSlides;
-//     updateSlider();
-// }
-
-// setInterval(nextSlide, 1000);
-
-
-// bottum slider 
-document.getElementById('scrollToTop').addEventListener('click', function () {
+// footer 
+function scrollToTop() {
   window.scrollTo({ top: 0, behavior: 'smooth' });
-});
+}

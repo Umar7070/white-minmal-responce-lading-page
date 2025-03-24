@@ -19,6 +19,50 @@
 
 <body>
 
+    <nav class="header__navbar heder_transparent">
+        <div class="logo">
+            <p>white</p>
+        </div>
+        <ul class="header__navmenu">
+            <li class="header__navitem">
+                <a href="/" class="header__navlink">Home</a>
+            </li>
+            <li class="header__navitem">
+                <a href="about.html" class="header__navlink">About</a>
+            </li>
+            <li class="header__navitem">
+                <a href="portfolio.html" class="header__navlink">Portfolio</a>
+            </li>
+
+            <li class="header__navitem">
+                <a href="services.html" class="header__navlink">Serveces</a>
+            </li>
+
+            <li class="header__navitem">
+                <a href="#Blog" class="header__navlink">Blog</a>
+            </li>
+
+            <li class="header__navitem">
+                <a href="contact.html" class="header__navlink">Contect</a>
+            </li>
+        </ul>
+        <div class="header__hamburger">
+            <span class="header__bar"></span>
+            <span class="header__bar"></span>
+            <span class="header__bar"></span>
+        </div>
+    </nav>
+    <div class="about_sec">
+        <div class="about_back">
+            <div class="about_title">
+                <h2>services</h2>
+                <p>We are branding & digital studio from London.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- about sec  -->
+
     <section class="about-section">
         <h2>Our Services</h2>
         <p class="intro-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sequi tempora veritatis nemo aut
@@ -93,6 +137,114 @@
             <p class="testimonial-role">Programmer, somesite.com</p>
         </div>
     </div>
+    <!-- work process  -->
+    <section class="work-process">
+        <h2>OUR WORK PROCESS</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem a ducimus tenetur nobis optio cum magnam
+            aliquid adipisci possimus dolore, rerum quibusdam obcaecati!</p>
+
+        <div class="process-container">
+            <div class="process-card">
+                <div class="icon">
+                    <i class="fa-solid fa-signal"></i>
+                </div>
+                <div class="circle">1</div>
+                <h3>INTERVIEW</h3>
+                <p>A wonderful serenity has taken possession...</p>
+            </div>
+
+            <div class="process-card active">
+                <div class="icon">
+                    <i class="fa-solid fa-lightbulb"></i>
+                </div>
+                <div class="circle">2</div>
+                <h3>PLAN</h3>
+                <p>Balancing a composition involves arranging...</p>
+            </div>
+
+            <div class="process-card">
+                <div class="icon">
+                    <i class="fa-solid fa-laptop"></i>
+                </div>
+                <div class="circle">3</div>
+                <h3>DESIGN</h3>
+                <p>Far far away, behind the word mountains...</p>
+            </div>
+
+            <div class="process-card">
+                <div class="icon">
+                    <i class="fa-solid fa-pencil"></i>
+                </div>
+                <div class="circle">4</div>
+                <h3>DEVELOPMENT</h3>
+                <p>One morning, when Gregor Samsa woke...</p>
+            </div>
+        </div>
+    </section>
+    <!-- business container section  -->
+    <div class="business_container">
+        <div class="text-section">
+            <h2>BEST SOLUTION FOR YOUR BUSINESS</h2>
+            <p>It can be used on larger scale projects as well as small scale projects</p>
+        </div>
+        <div class="button-section">
+            <button class="download-btn">DOWNLOAD NOW</button>
+        </div>
+    </div>
+
+    <!-- slider container  -->
+    <div class="slider-container">
+        <button class="arrow arrow-left" onclick="prevSlide()">&#10094;</button>
+        <div class="slider" id="slider">
+            <div class="slide">
+                <img src="/img/c1.png" alt="">
+            </div>
+            <div class="slide"> <img src="/img/c2.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="/img/c3.png" alt="">
+
+            </div>
+            <div class="slide">
+                <img src="/img/c4.png" alt="">
+
+            </div>
+            <div class="slide">
+                <img src="/img/c5.png" alt="">
+
+            </div>
+            <div class="slide">
+                <img src="/img/c6.png" alt="">
+
+            </div>
+        </div>
+        <button class="arrow arrow-right" onclick="nextSlide()">&#10095;</button>
+    </div>
+    <!-- footer  -->
+    <footer class="footer">
+        <h4 class="footer-title">WHITE</h4>
+
+        <div class="social-icons">
+            <div class="icon"><i class="fab fa-facebook-f"></i></div>
+            <div class="icon"><i class="fab fa-google"></i></div>
+            <div class="icon"><i class="fab fa-instagram"></i></div>
+            <div class="icon"><i class="fab fa-pinterest-p"></i></div>
+        </div>
+
+        <nav class="footer-nav">
+            <ul>
+                <li>Home</li>
+                <li>Portfolio</li>
+                <li>About</li>
+                <li>Blog</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+        <p class="copyright">All copyright &copy; reserved by <span class="highlight">ThemePure</span> 2025</p>
+        <button id="scrollToTop" class="scroll-top">&#9650;</button>
+    </footer>
+
+    <script src="/js/services.js"></script>
 </body>
 
 

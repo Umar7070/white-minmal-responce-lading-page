@@ -160,8 +160,6 @@
 .about_title {
   position: relative;
   z-index: 1;
-
-
 }
 
 .about_title h2 {
@@ -212,6 +210,8 @@
 
   .header__navmenu.active {
     left: 0;
+    top: -10;
+    background-color: white
   }
 }
 
@@ -350,10 +350,11 @@
 
 /* work process */
 
+
 .work-process {
   padding: 50px 20px;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 15px;
 }
 
 .work-process h2 {
@@ -368,9 +369,8 @@
 
 .work-process p {
   text-align: center;
-  width: 50%;
+  /* width: 50%; */
   margin: auto;
-  margin-top: 25px;
   font-size: 12px;
   line-height: 2;
   color: #555;
@@ -397,9 +397,9 @@
 }
 
 .process-card i {
-  padding: 40px 0;
+  padding: 20px 0;
   position: relative;
-  margin-top: 7%;
+  /* margin-top: 7%; */
   width: 100%;
 }
 
@@ -414,10 +414,7 @@
   transform: translateY(-5px);
 }
 
-.icon img {
-  width: 40px;
-  height: 40px;
-}
+
 
 .circle {
   width: 30px;
@@ -520,7 +517,7 @@
 
 .services {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
   margin-top: 30px;
 }
@@ -1020,9 +1017,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 80%;
-  max-width: 1000px;
-  padding: 10px 50px;
+  width: 100%;
+  padding: 50px 150px;
+  background-color: #f6f6f6;
 }
 
 .text-section h2 {
@@ -1049,6 +1046,50 @@
 .download-btn:hover {
   background-color: #222;
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .business_container {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    width: 90%;
+  }
+
+  .text-section h2 {
+    font-size: 18px;
+  }
+
+  .text-section p {
+    font-size: 12px;
+  }
+
+  .download-btn {
+    width: 100%;
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .business_container {
+    padding: 15px;
+  }
+
+  .text-section h2 {
+    font-size: 16px;
+  }
+
+  .text-section p {
+    font-size: 12px;
+  }
+
+  .download-btn {
+    font-size: 10px;
+    padding: 8px 15px;
+    margin-top: 10px;
+  }
+}
+
 
 /* <!-- slider container  --> */
 .slider-container {
@@ -1101,15 +1142,10 @@
 /* footer  */
 
 
-
 .footer {
-  /* background-color: #dad8d8;
-  padding: 40px 0;
-  position: relative;
   margin-top: 7%;
-  width: 100%; */
-  margin-top: 7%;
-
+  width: 100%;
+  padding: 20px 10px;
 }
 
 .footer-title {
@@ -1122,39 +1158,29 @@
 .social-icons {
   display: flex;
   justify-content: center;
-  gap: 15px;
+  gap: 10px;
   margin-top: 15px;
+  flex-wrap: wrap;
 }
 
 .icon {
-  width: 40px;
-  height: 40px;
-  background-color: black;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  font-size: 16px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.icon:hover {
-  background-color: #444;
+  width: 35px;
+  height: 35px;
+  font-size: 14px;
 }
 
 .footer-nav ul {
   list-style: none;
   padding: 0;
-  margin: 20px 0;
+  margin: 15px 0;
   display: flex;
   justify-content: center;
-  gap: 15px;
+  gap: 10px;
   font-size: 12px;
   font-weight: bold;
   text-transform: uppercase;
   color: #555;
+  flex-wrap: wrap;
 }
 
 .footer-nav ul li {
@@ -1165,28 +1191,86 @@
   font-size: 12px;
   color: #666;
   margin-top: 10px;
-}
-
-.highlight {
-  color: blue;
-  font-weight: bold;
+  text-align: center;
 }
 
 .scroll-top {
   position: fixed;
-  bottom: 15px;
-  right: 15px;
-  width: 40px;
-  height: 40px;
-  background-color: black;
-  color: white;
-  border: none;
-  border-radius: 50%;
-  font-size: 20px;
-  cursor: pointer;
-  transition: 0.3s;
+  bottom: 10px;
+  right: 10px;
+  width: 35px;
+  height: 35px;
+  font-size: 18px;
 }
 
-.scroll-top:hover {
-  background-color: #444;
+@media (max-width: 768px) {
+  .footer {
+    padding: 15px;
+    margin-top: 10%;
+  }
+
+  .footer-title {
+    font-size: 13px;
+  }
+
+  .social-icons {
+    gap: 8px;
+  }
+
+  .icon {
+    width: 30px;
+    height: 30px;
+    font-size: 12px;
+  }
+
+  .footer-nav ul {
+    font-size: 11px;
+    gap: 8px;
+  }
+
+  .scroll-top {
+    bottom: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 10px;
+    margin-top: 12%;
+  }
+
+  .footer-title {
+    font-size: 12px;
+  }
+
+  .social-icons {
+    gap: 6px;
+  }
+
+  .icon {
+    width: 28px;
+    height: 28px;
+    font-size: 11px;
+  }
+
+  .footer-nav ul {
+    font-size: 10px;
+    gap: 6px;
+  }
+
+  .copyright {
+    font-size: 10px;
+  }
+
+  .scroll-top {
+    bottom: 5px;
+    right: 5px;
+    width: 28px;
+    height: 28px;
+    font-size: 14px;
+  }
 }

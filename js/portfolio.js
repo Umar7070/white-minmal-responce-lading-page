@@ -14,13 +14,26 @@ document.querySelectorAll(".header__navlink").forEach((n)=>n.addEventListener("c
 
 
 // header color changes 
-window.addEventListener("scroll", function() {
-  let header = document.querySelector(".header");
-  if (window.scrollY > 50) {
-      header.classList.add("scrolled");
-  } else {
-      header.classList.remove("scrolled");
-  }
+// window.addEventListener("scroll", function() {
+//   let header = document.querySelector(".header");
+//   if (window.scrollY > 50) {
+//       header.classList.add("scrolled");
+//   } else {
+//       header.classList.remove("scrolled");
+//   }
+// });
+$(document).ready(function () {
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 100) {
+      $(".logo").css("color", "black");
+      $(".header__navlink").css("color", "black");
+      $(".header__navbar").css("background-color", "lightgray");
+    } else {
+      $(".logo").css("color", "");
+      $(".header__navlink").css("color", "");
+      $(".header__navbar").css("background-color", "transparent");
+    }
+  });
 });
 
 // /filter 
