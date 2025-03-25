@@ -4,22 +4,345 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>servicess</title>
-    <!-- <link rel="stylesheet" href="/css/fortfolio.css"> -->
-    <!-- <link rel="stylesheet" href="/css/servicess.css"> -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="/css/blog.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Gidole&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fontawesome-iconpicker/3.2.0/js/fontawesome-iconpicker.min.js"
-        integrity="sha512-7dlzSK4Ulfm85ypS8/ya0xLf3NpXiML3s6HTLu4qDq7WiJWtLLyrXb9putdP3/1umwTmzIvhuu9EW7gHYSVtCQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+<style>
+    .header__hamburger.open span {
+        background: transparent;
+    }
+
+    .header__hamburger.open::before {
+        content: "\2715";
+        font-size: 24px;
+        position: absolute;
+    }
+</style>
+
 <body>
-    
+
+    <nav class="header__navbar">
+        <div class="logo">
+            <p>white</p>
+        </div>
+
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="header__hamburger">
+            <span class="header__bar"></span>
+            <span class="header__bar"></span>
+            <span class="header__bar"></span>
+        </label>
+
+        <ul class="header__navmenu">
+            <li class="header__navitem"><a href="/">Home</a></li>
+            <li class="header__navitem"><a href="about.html">About</a></li>
+            <li class="header__navitem"><a href="portfolio.html">Portfolio</a></li>
+            <li class="header__navitem"><a href="services.html">Services</a></li>
+
+            <li class="header__navitem dropdown">
+                <a href="blog.html">BLOG</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">GRID</a></li>
+                    <li class="dropdown-right">
+                        <a href="#">SINGLE POST</a>
+                        <ul class="submenu">
+                            <li><a href="sidebar.html">SIDEBAR LEFT</a></li>
+                            <li><a href="#">SIDEBAR RIGHT</a></li>
+                            <li><a href="#">WITHOUT SIDEBAR</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">CLASSIC</a></li>
+                    <li><a href="#">MASONRY</a></li>
+                    <li><a href="#">THUMBNAIL</a></li>
+                </ul>
+            </li>
+
+            <li class="header__navitem"><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="blog-us-big-banner">
+        <div class="blog-us-big-banner-child">
+            <div class="blog-us-secondary-div">
+                <h5 class="blog-usheadfgin">
+                    BLOG CLASSIC
+                </h5>
+                <p class="blog-us-pearagrph">
+                    Home &nbsp; / &nbsp; Blog &nbsp; / &nbsp; Classic
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="blog-whole-section-div">
+        <div class="blog-whole-section-child-container">
+
+            <div class="blog-section-sidebar-containcer">
+                <div class="searchbar-section-div">
+                    <input type="search" name="" id="">
+                    <img src="https://static.vecteezy.com/system/resources/thumbnails/009/652/218/small_2x/magnifying-glass-icon-isolated-on-white-background-search-illustration-vector.jpg"
+                        alt="" class="search-bar-icon-img">
+
+                </div>
+
+                <div class="categories-sidebar-section0div">
+                    <h1>CATEGORIES</h1>
+                    <div class="underlining-of-thesection">
+                    </div>
+
+                    <div class="sidebar-categories-sectiontitles-holder-kl">
+                        <a href="">
+                            Journey
+                        </a>
+                        <p class="sidebar-catego-secti-numerics">
+                            13
+                        </p>
+                    </div>
+
+
+                    <div class="sidebar-categories-sectiontitles-holder-kl">
+
+                        <a href="">
+                            Journey
+                        </a>
+                        <p class="sidebar-catego-secti-numerics">
+                            13
+                        </p>
+
+                    </div>
+
+
+                    <div class="sidebar-categories-sectiontitles-holder-kl">
+
+                        <a href="">
+                            Journey
+                        </a>
+                        <p class="sidebar-catego-secti-numerics">
+                            13
+                        </p>
+
+                    </div>
+
+
+                    <div class="sidebar-categories-sectiontitles-holder-kl">
+
+                        <a href="">
+                            Journey
+                        </a>
+                        <p class="sidebar-catego-secti-numerics">
+                            13
+                        </p>
+
+                    </div>
+
+
+                    <div class="sidebar-categories-sectiontitles-holder-kl">
+
+                        <a href="">
+                            Journey
+                        </a>
+                        <p class="sidebar-catego-secti-numerics">
+                            13
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="simple-text-section-sidebar">
+                    <h1>
+                        SIMPLE TEXT
+                    </h1>
+                    <div class="underlining-of-thesection">
+                    </div>
+                    <p class="simpletext-sidebar-section">
+                        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In
+                        dui magna posuere.
+                    </p>
+                </div>
+
+                <div class="recent-post-sidebar-section">
+                    <h1>
+                        RECENT POSTS
+                    </h1>
+                    <div class="underlining-of-thesection">
+                    </div>
+
+
+                    <div class="recnt-post-item-card-sidebar">
+                        <img src="https://picsum.photos/id/297/1920/800" alt="" class="recnt-post-img-sidebar-carditem">
+                        <div class="recnt-post-innre-memb">
+                            <h4 class="sidebar-recentpost-item-title">LITTLE HEART</h4>
+                            <p class="sidebar-recent-post-carditem">October 28, 2025</p>
+                        </div>
+                    </div>
+
+
+                    <div class="recnt-post-item-card-sidebar">
+                        <img src="https://picsum.photos/id/297/1920/800" alt="" class="recnt-post-img-sidebar-carditem">
+                        <div class="recnt-post-innre-memb">
+                            <h4 class="sidebar-recentpost-item-title">LITTLE HEART</h4>
+                            <p class="sidebar-recent-post-carditem">October 28, 2025</p>
+                        </div>
+                    </div>
+                    <div class="recnt-post-item-card-sidebar">
+                        <img src="https://picsum.photos/id/297/1920/800" alt="" class="recnt-post-img-sidebar-carditem">
+                        <div class="recnt-post-innre-memb">
+                            <h4 class="sidebar-recentpost-item-title">LITTLE HEART</h4>
+                            <p class="sidebar-recent-post-carditem">October 28, 2025</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="categories-sidebar-section">
+                    <h1>
+                        CATEGORIES
+                    </h1>
+                    <div class="underlining-of-thesection">
+                    </div>
+
+
+                    <div class="block-holders-for-thesection">
+                        <p class="blocks-holding-categories-sidebar">
+                            Bootstrap
+                        </p>
+
+                        <p class="blocks-holding-categories-sidebar">
+                            Business
+                        </p>
+
+                        <p class="blocks-holding-categories-sidebar">
+                            CSS
+                        </p>
+
+                        <p class="blocks-holding-categories-sidebar">
+                            Corporate
+                        </p>
+
+                        <p class="blocks-holding-categories-sidebar">
+                            Portfolio
+                        </p>
+                        <p class="blocks-holding-categories-sidebar">
+                            E-Commerce
+                        </p>
+
+                        <p class="blocks-holding-categories-sidebar">
+                            JQuery
+                        </p>
+
+                        <p class="blocks-holding-categories-sidebar">
+                            Responsive
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="blog-sectioncontaent-max-div">
+                <div class="blog-section-div-content">
+                    <img src="https://picsum.photos/id/397/2560/1440" alt="" class="blogsection-max-content-img">
+                    <p class="blog-sontent-max-div-author">
+                        By Mark Stoner, 23 November, 2025
+                    </p>
+                    <h1 class="blog-sontent-max-div-title-a">
+                        THE ULTIMATE RENTERS GUIDE
+                    </h1>
+                    <p class="blog-content-max-div-introduction-info">
+                        Grass there without lights be years male have and grass firmament kind bring, is thing doesn't
+                        herb.
+                    </p>
+                    <a href="">Read more -></a>
+                </div>
+                <div class="blog-section-div-content">
+                    <img src="https://picsum.photos/id/217/2560/1440" alt="" class="blogsection-max-content-img">
+                    <p class="blog-sontent-max-div-author">
+                        By Mark Stoner, 23 November, 2025
+                    </p>
+                    <h1 class="blog-sontent-max-div-title-a">
+                        THE ULTIMATE RENTERS GUIDE
+                    </h1>
+                    <p class="blog-content-max-div-introduction-info">
+                        Grass there without lights be years male have and grass firmament kind bring, is thing doesn't
+                        herb.
+                    </p>
+                    <a href="">Read more -></a>
+                </div>
+                <div class="blog-section-div-content">
+                    <img src="https://picsum.photos/id/247/2560/1440" alt="" class="blogsection-max-content-img">
+                    <p class="blog-sontent-max-div-author">
+                        By Mark Stoner, 23 November, 2025
+                    </p>
+                    <h1 class="blog-sontent-max-div-title-a">
+                        THE ULTIMATE RENTERS GUIDE
+                    </h1>
+                    <p class="blog-content-max-div-introduction-info">
+                        Grass there without lights be years male have and grass firmament kind bring, is thing doesn't
+                        herb.
+                    </p>
+                    <a href="">Read more -></a>
+                </div>
+            </div>
+
+            <div class="bottom-pagination-section">
+                <div class="bottom-pagination-itemboxholder">
+                    <div class="boxitem-pagin-c7">
+                        ◀
+                    </div>
+                    <div class="boxitem-pagin-c7">
+                        1
+                    </div>
+                    <div class="boxitem-pagin-c7">
+                        2
+                    </div>
+                    <div class="boxitem-pagin-c7">
+                        3
+                    </div>
+                    <div class="boxitem-pagin-c7">
+                        4
+                    </div>
+                    <div class="boxitem-pagin-c7">
+                        5
+                    </div>
+                    <div class="boxitem-pagin-c7">
+                        ▶
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- footer  -->
+    <footer class="footer">
+        <h3>WHITE</h3>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-google-plus-g"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fas fa-globe"></i></a>
+        </div>
+        <div class="footer-links">
+            <a href="#">HOME</a> •
+            <a href="#">PORTFOLIO</a> •
+            <a href="#">ABOUT</a> •
+            <a href="#">BLOG</a> •
+            <a href="#">CONTACT</a>
+        </div>
+        <p class="copyright">All copyright © reserved by <span>ThemePure</span> 2025</p>
+    </footer>
+    <div class="scroll-top" onclick="scrollToTop()">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+
+
+    <script src="/js/blog.js"></script>
+
 </body>
-
-
 
 </html>

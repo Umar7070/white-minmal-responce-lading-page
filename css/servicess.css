@@ -75,7 +75,7 @@
 .header__hamburger {
   display: none;
   cursor: pointer;
-  border: 2px solid white;
+  border: 2px solid red;
   border-radius: 50%;
   padding: 5px;
   height: 45px;
@@ -142,7 +142,7 @@
   color: white;
   position: relative;
   z-index: 2;
-  top: -70px;
+  top: -80px;
 
 }
 
@@ -200,10 +200,10 @@
 
   .header__bar {
     display: block;
-    width: 25px;
+    width: 22px;
     height: 3px;
     margin: 5px auto;
-    background: white;
+    background: red;
     transition: 0.3s;
   }
 

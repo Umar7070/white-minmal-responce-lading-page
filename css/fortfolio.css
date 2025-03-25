@@ -28,6 +28,7 @@
   text-transform: uppercase;
   font-weight: 300;
   font-style: italic;
+  color: white;
 }
 
 .header__navitem {
@@ -36,7 +37,8 @@
 
 .header__navlink {
   text-decoration: none;
-  color: black;
+  /* color: black; */
+  color: white;
   font-size: 1rem;
   transition: 0.7s ease;
 }
@@ -50,10 +52,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 3.5rem;
+  padding: 1.5rem 3.5rem;
   position: sticky;
   top: 0;
   z-index: 999;
+  background-color: lightgray;
 }
 
 .header__navmenu {
